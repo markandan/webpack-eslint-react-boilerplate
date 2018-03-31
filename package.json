@@ -1,0 +1,59 @@
+{
+  "name": "webpack-eslint-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate configuration using Webpack, ESLint for React applications",
+  "main": "index.js",
+  "scripts": {
+    "build": "eslint src/**/*.js && webpack --config webpack.config.js -p",
+    "eslint": "eslint src/**/*.js",
+    "start": "npm run eslint && webpack-dev-server --open --config webpack.config.js --port 8081",
+    "test": "jest"
+  },
+  "repository": "git+https://github.com/markandan/webpack-eslint-react-boilerplate.git",
+  "keywords": [
+    "webpack",
+    "eslint",
+    "react"
+  ],
+  "author": "Markandan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markandan/webpack-eslint-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/markandan/webpack-eslint-react-boilerplate#readme",
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-3"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "html-webpack-plugin": "^3.1.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2"
+  }
+}
